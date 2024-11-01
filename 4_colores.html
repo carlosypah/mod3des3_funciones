@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colores a negro</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/function.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div
+      id="cuadrado1"
+      style="width: 200px; height: 200px; background-color: blue"
+    ></div>
+    <div
+      id="cuadrado2"
+      style="width: 200px; height: 200px; background-color: red"
+    ></div>
+    <div
+      id="cuadrado3"
+      style="width: 200px; height: 200px; background-color: green"
+    ></div>
+    <div
+      id="cuadrado4"
+      style="width: 200px; height: 200px; background-color: yellow"
+    ></div>
+
+    <script>
+      toBlack = function (element) {
+        element.style.backgroundColor = "black";
+      };
+
+      c1 = document.getElementById("cuadrado1");
+      c2 = document.getElementById("cuadrado2");
+      c3 = document.getElementById("cuadrado3");
+      c4 = document.getElementById("cuadrado4");
+      c1.addEventListener("click", function () {
+        toBlack(c1);
+      });
+      c2.addEventListener("click", function () {
+        toBlack(c2);
+      });
+      c3.addEventListener("click", function () {
+        toBlack(c3);
+      });
+      c4.addEventListener("click", function () {
+        toBlack(c4);
+      });
+    </script>
+  </body>
+</html>
